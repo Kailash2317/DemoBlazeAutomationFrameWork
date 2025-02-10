@@ -1,0 +1,26 @@
+{
+    "browser": {
+        "chrome": "chrome",
+        "edge": "edge",
+        "firefox": "firefox"
+    },
+    "website": {
+        "url": "https://www.demoblaze.com/"
+    },
+    "login": {
+        "username": "Tester300",
+        "password": "newpassword003"
+    },
+    "checkout": {
+        "name": "Tester",
+        "city": "jodhpur",
+        "country": "India",
+        "creditCard": "123456",
+        "month": "june",
+        "year": "2025"
+    },
+    "signup": {
+        "username": "Tester300",
+        "password": "newpassword003"
+    }
+}
