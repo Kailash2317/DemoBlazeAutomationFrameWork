@@ -144,5 +144,21 @@ namespace Demo_Project.Tests
             // Finalize Extent Report for the test
             ExtentReporting.EndReporting();
         }
+
+        // This method will be executed after all tests in the class have finished
+        [OneTimeTearDown]
+        public void OneTimeTearDown()
+        {
+            // Send email with the final report after all tests are complete
+            string reportPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"..\..\..\results\index.html");
+            
+            // Email configuration
+            string recipientEmail = "kailash.8619552317@gmail.com";  // Change to actual recipient
+            string subject = "Test Report - All Test Cases Completed";
+            string body = "Please find the attached Extent Test Report for the completed test run.";
+
+            // Send the report as an email attachment
+            EmailSender.SendEmailWithAttachment(recipientEmail, subject, body, reportPath);
+        }
     }
 }

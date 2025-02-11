@@ -72,6 +72,9 @@ namespace Demo_Project.Tests
 
             // Finalize the report
             ExtentReporting.EndReporting();
+            Thread.Sleep(2000); 
+           
+
 
             // Dispose WebDriver
             Dispose();
